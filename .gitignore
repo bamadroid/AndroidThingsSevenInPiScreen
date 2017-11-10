@@ -1,0 +1,32 @@
+*.iml
+.gradle
+/.idea/libraries
+.DS_Store
+/captures
+
+#built application files
+*.apk
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio
+.idea
+#.idea/workspace.xml - remove # and delete .idea if it better suit your needs.
+build/
+.navigation
+captures/
+output.json #Since Android Studio 3.0
+
+#NDK
+.externalNativeBuild
