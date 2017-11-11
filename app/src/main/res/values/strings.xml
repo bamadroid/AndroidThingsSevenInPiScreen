@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AndroidThings7inPiScreen</string>
+    <string name="its_working_text">IT\'S WORKING - %1$d</string>
+    <string name="click_me">Click Me</string>
 </resources>
