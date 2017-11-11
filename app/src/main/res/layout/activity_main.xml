@@ -20,8 +20,8 @@
                 android:id="@+id/testButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/click_me"
-                android:padding="5dp" />
+                android:padding="5dp"
+                android:text="@string/click_me" />
 
             <TextView
                 android:id="@+id/testText"
@@ -40,9 +40,9 @@
             style="?android:attr/progressBarStyleLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
             android:layout_centerHorizontal="true"
-            android:visibility="gone"/>
+            android:layout_gravity="center"
+            android:visibility="gone" />
 
         <Button
             android:id="@+id/powerButton"

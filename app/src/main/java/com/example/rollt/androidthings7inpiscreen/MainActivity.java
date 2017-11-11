@@ -10,23 +10,10 @@ import android.widget.TextView;
 import java.io.IOException;
 
 /**
- * Skeleton of an Android Things activity.
+ * Activity used to verify the Raspberry Pi 7in Touch Screen
  * <p>
- * Android Things peripheral APIs are accessible through the class
- * PeripheralManagerService. For example, the snippet below will open a GPIO pin and
- * set it to HIGH:
- * <p>
- * <pre>{@code
- * PeripheralManagerService service = new PeripheralManagerService();
- * mLedGpio = service.openGpio("BCM6");
- * mLedGpio.setDirection(Gpio.DIRECTION_OUT_INITIALLY_LOW);
- * mLedGpio.setValue(true);
- * }</pre>
- * <p>
- * For more complex peripherals, look for an existing user-space driver, or implement one if none
- * is available.
- *
- * @see <a href="https://github.com/androidthings/contrib-drivers#readme">https://github.com/androidthings/contrib-drivers#readme</a>
+ * Launches the main activity on startup and displays a button that is clickable.
+ * Included a Power button to shut down the Raspberry Pi ("reboot -p")
  */
 public class MainActivity extends Activity
 {
@@ -66,6 +53,7 @@ public class MainActivity extends Activity
                 // Show progress spinner
                 mSpinner.setVisibility(View.VISIBLE);
 
+                // Destroys the Activity
                 finish();
             }
         });
@@ -76,7 +64,7 @@ public class MainActivity extends Activity
     {
         super.onDestroy();
 
-        // Start Power Off
+        // Shutdown Pi
         powerOff();
     }
 
